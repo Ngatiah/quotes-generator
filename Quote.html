@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Quote.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="Quote.css"> -->
+    <script defer src="Quote.js"></script>
+</head>
+<body>
+    
+    <div class="random-quote-genarator">
+
+        <div class="quoteCard">
+
+            <div class="author-name"></div>
+            
+            <div class="buttons">
+
+                <button class="btn1">Famous Quotes</button>
+                <button class="btn2">Inspirational</button>
+            </div>
+            
+           
+                <div class="quote">
+                    <q></q>
+            </div>
+        </div>
+
+        <div class="copy-to-clipboard">
+            <!-- <button onclick="shareQuote()"><i class="fas fa-share"></i></button> -->
+            <button onclick=" showShareDialog()"><i class="fas fa-share"></i></button>
+            <!-- <button onclick="copyToClipboard()" ><i class="fas fa-copy"></i></button> -->
+            <button onclick="cloneUrl()"><i class="fas fa-clone"></i></button>
+
+        </div>
+
+        <div id="shareDialog" class="share-dialog">
+            <div class="share-dialog-content">
+              <h2>Share Quote</h2>
+              <button onclick="shareOnPlatform('twitter')">Twitter</button>
+              <button onclick="shareOnPlatform('facebook')">Facebook</button>
+              <button onclick="shareOnPlatform('linkedin')">LinkedIn</button>
+              <button onclick="shareOnPlatform('whatsapp')">WhatsApp</button>
+              <button onclick="hideShareDialog()">Cancel</button>
+            </div>
+          </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+    
+</html>

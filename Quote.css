@@ -1,0 +1,138 @@
+.random-quote-genarator{
+    background-color: #111729;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.quoteCard{
+    background-color:#4a5567;
+    width: 60%;
+    height: 300px;
+    display: flex;
+    /* flex: 2; */
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.quote{
+    color: #97a3b6;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.btn1,.btn2{
+    
+    /* margin: 5px; */
+    border: 1px solid #6466e9;
+    color: #6466e9;
+    border-radius: 50px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 400;
+    background-color: #4a5567;
+    margin: 0 5px;
+}
+
+
+.btn1:hover, .btn2:hover {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.author-name{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.copy-to-clipboard{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    border: none;
+    /* position: relative; */
+}
+
+.copy-to-clipboard button{
+    border: 1px solid #4a5567;
+    color: #4a5567;
+    border-radius: 10px;
+    width: 120px;
+    height: 60px;
+    background-color: #111729;
+}
+
+
+.copy-to-clipboard button :hover {
+    background-color: #6466e9;
+}
+
+.copy-to-clipboard button i{
+    width: 40px;
+    height: 40px;
+   
+}
+
+.share-dialog {
+    display: none;
+    position: fixed;
+    /* z-index: 1; */
+    left: 0;
+    top: 0;
+    /* overflow: auto; */
+    margin: 80px 300px;
+    background-color: #111729;
+    width: 800px;
+    height: 400px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.share-dialog-content {
+   
+    background-color:#4a5567;
+    text-align: center;
+    /* margin: 15% auto; */
+    margin: 120px 80px;
+    padding: 20px;
+    /* border: 1px solid #888; */
+    width: 80%;
+    border-radius: 10px;
+}
+
+.share-dialog-content h2{
+    color: #fff;
+}
+.share-dialog-content button{
+    background-color:#4a5567;
+    color: #6466e9;
+    border: 1px solid #6466e9;
+    margin: 8px;
+    border-radius: 50px;
+     width: 100px;
+    height: 30px;
+
+
+  }
+
+  /* .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+  } */
